@@ -721,7 +721,7 @@
 
 .library-card {
   min-width: 0;
-  height: 390px;
+  height: 450px;
   background: #ffffff;
   border: 1px solid #dbeafe;
   border-radius: 18px;
@@ -756,7 +756,7 @@
 .card-body {
   box-sizing: border-box;
   padding: 14px 14px 18px;
-  height: 240px;
+  height: 300px;
   display: flex;
   min-height: 0;
   flex-direction: column;
@@ -778,9 +778,12 @@
   margin: 0;
   color: #0f172a;
   font-size: 1.05rem;
+  line-height: 1.35;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .card-title-row {
